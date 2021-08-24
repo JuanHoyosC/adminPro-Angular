@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn" [ngClass]="btnClass"(click)="desminuir(5)"type="button"><i class="fa fa-minus"></i></button>
+            </span>
+            <input type="number" class="form-control" min="0" max="0" (keyup)="onChange()" [(ngModel)]="valor" placeholder="Valor">
+            <span class="input-group-btn">
+                <button class="btn" [ngClass]="btnClass" (click)="aumentar(5)" type="button"><i class="fa fa-plus"></i></button>
+            </span>
+        </div>
+    </div>
+</div>
