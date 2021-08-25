@@ -14,6 +14,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { Grafica1Component } from './pages/grafica1/grafica1.component';
+import { AccountSettingsComponent } from './pages/account-settings/account-settings.component';
 
 
 //Componentes
@@ -25,6 +26,8 @@ import { HomeComponent } from './home.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 import { DonaComponent } from './components/dona/dona.component';
+import { ThemeSelectDirective } from './directives/theme-select.directive';
+
 
 
 @NgModule({
@@ -39,7 +42,9 @@ import { DonaComponent } from './components/dona/dona.component';
     ProgressBarComponent,
     IncrementadorComponent,
     Grafica1Component,
-    DonaComponent
+    DonaComponent,
+    AccountSettingsComponent,
+    ThemeSelectDirective
   ],
   imports: [
     CommonModule,
