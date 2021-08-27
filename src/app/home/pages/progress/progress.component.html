@@ -2,15 +2,15 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <app-progress-bar [progress]="progress1"></app-progress-bar>
-                <app-progress-bar [progress]="progress2"></app-progress-bar>
+                <app-progress-bar [progress]="progress1" [progressColor]="'bg-primary'"></app-progress-bar>
+                <app-progress-bar [progress]="progress2" [progressColor]="'bg-info'"></app-progress-bar>
             </div>
         </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-6">
+    <div class="col-md-6">
         <div class="card">
             <div class="card-body">
                 <app-incrementador (valorSalida)="progress1=$event" [valor]="progress1" [btnClass]="'btn-primary'"></app-incrementador>
@@ -18,10 +18,10 @@
         </div>
     </div>
 
-    <div class="col-6">
-        <div class="card">
-            <div class="card-body">
-                <app-incrementador (valorSalida)="progress2=$event" [valor]="progress2" [btnClass]="'btn-info'"></app-incrementador>
+    <div class=" col-md-6 ">
+        <div class="card ">
+            <div class="card-body ">
+                <app-incrementador (valorSalida)="progress2=$event " [valor]="progress2 " [btnClass]=" 'btn-info' "></app-incrementador>
             </div>
         </div>
     </div>

@@ -27,6 +27,7 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 import { DonaComponent } from './components/dona/dona.component';
 import { ThemeSelectDirective } from './directives/theme-select.directive';
+import { RxjsComponent } from './pages/rxjs/rxjs.component';
 
 
 
@@ -44,7 +45,8 @@ import { ThemeSelectDirective } from './directives/theme-select.directive';
     Grafica1Component,
     DonaComponent,
     AccountSettingsComponent,
-    ThemeSelectDirective
+    ThemeSelectDirective,
+    RxjsComponent
   ],
   imports: [
     CommonModule,

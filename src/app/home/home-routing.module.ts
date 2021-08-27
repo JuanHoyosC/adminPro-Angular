@@ -5,6 +5,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { AccountSettingsComponent } from './pages/account-settings/account-settings.component';
+import { RxjsComponent } from './pages/rxjs/rxjs.component';
 
 const routes: Routes = [
   {
@@ -13,20 +14,29 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: DashboardComponent
+        component: DashboardComponent, 
+        data: { titulo: 'Dashboard' }
       },
       {
         path: 'progress',
-        component: ProgressComponent
+        component: ProgressComponent, 
+        data: { titulo: 'Progress' }
       },
       {
         path: 'grafica1',
-        component: Grafica1Component
+        component: Grafica1Component, 
+        data: { titulo: 'Grafica1' }
       },
       {
         path: 'account-settings',
-        component: AccountSettingsComponent
+        component: AccountSettingsComponent, 
+        data: { titulo: 'Account-settings' }
       },
+      {
+        path: 'rxjs',
+        component: RxjsComponent, 
+        data: { titulo: 'Rxjs' }
+      }
     ],
   },
   {
